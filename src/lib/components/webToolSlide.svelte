@@ -22,15 +22,15 @@
 			<img
 				src={slide.logo.url}
 				alt={slide.logo.title}
-				class="h-14 w-14 rounded-full transition duration-300 ease-out group-hover:-translate-y-6"
+				class="h-14 w-14 rounded-full transition duration-300 ease-out -translate-y-4 sm:translate-y-0 sm:group-hover:-translate-y-6"
 			/>
 		</picture>
 	</a>
 	<div
-		class="pointer-events-none absolute bottom-0 left-0 z-30 w-full translate-y-full p-2 transition duration-300 ease-out group-hover:translate-y-0"
+		class="pointer-events-none absolute bottom-0 left-0 z-30 w-full sm:translate-y-full p-2 transition duration-300 ease-out sm:group-hover:translate-y-0"
 	>
 		<div
-			class="rounded-full bg-white/30 p-2 text-center font-medium leading-4 tracking-tighter text-dark/80"
+			class="rounded-full sm:bg-white/30 p-2 text-center font-medium leading-4 tracking-tighter text-dark/80"
 		>
 			{slide.title}
 		</div>
