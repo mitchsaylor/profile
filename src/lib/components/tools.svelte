@@ -12,7 +12,7 @@
 		Uses & Recommends:👍
 	</h2>
 	<figure
-		class="flex w-full max-w-4xl flex-col gap-y-4 rounded-xl border border-accent/10 py-12 shadow-sm print:hidden"
+		class="flex w-full max-w-4xl flex-col gap-y-4 rounded-xl border border-accent/10 py-12 shadow-sm print:hidden overflow-hidden"
 	>
 		<WebToolSlider direction="ltr">
 			{#each webTools.slice(0, 6) as slide}

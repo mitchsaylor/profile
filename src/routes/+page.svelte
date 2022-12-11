@@ -24,7 +24,7 @@
 </svelte:head>
 
 <header
-	class="flex flex-wrap items-start justify-between gap-x-6 text-accent/80 contrast-more:text-accent"
+	class="flex flex-wrap items-start justify-between gap-x-6 text-accent/80 contrast-more:text-accent w-full"
 >
 	<address class="font-meno text-xl lowercase italic">
 		<span class="sr-only">Mitch Saylor</span>

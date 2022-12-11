@@ -12,7 +12,7 @@
 </script>
 
 <p
-	class="mx-auto flex flex-col flex-wrap items-center justify-center gap-y-10 px-8 py-24 font-meno text-6xl lowercase print:flex-row print:gap-y-5 print:py-10 print:text-4xl md:max-w-3xl md:flex-row md:gap-y-3 md:px-0 lg:max-w-4xl"
+	class="mx-auto flex flex-col flex-wrap items-center justify-center gap-y-10 px-8 py-24 font-meno text-6xl lowercase print:flex-row print:gap-y-5 print:py-10 print:text-4xl md:max-w-3xl md:flex-row md:gap-y-3 md:px-0 lg:max-w-4xl overflow-hidden lg:overflow-visible"
 >
 	<strong class="relative text-center font-medium md:whitespace-nowrap">
 		<i
