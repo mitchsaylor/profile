@@ -12,5 +12,5 @@
 			transform="translate(1990.506 0.5)"
 		/>
 	</svg>
-	<span class="sr-only">Mitch Saylor</span>
+	<span class="sr-only">Mitch Saylor Personal Profile</span>
 </h1>
