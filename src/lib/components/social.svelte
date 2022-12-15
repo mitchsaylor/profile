@@ -9,7 +9,7 @@
 		<a
 			href="mailto:mitch@saylor.io"
 			target="_blank"
-			rel="noreferrer"
+			rel="external noreferrer"
 			tabIndex={0}
 			class="rounded-md p-1 transition duration-150 hover:text-accent/70 focus:outline-none focus:ring-2 focus:ring-contrast"
 		>
@@ -21,7 +21,7 @@
 		<a
 			href="https://www.behance.net/mitchsaylor"
 			target="_blank"
-			rel="noreferrer"
+			rel="external noreferrer"
 			tabIndex={0}
 			class="rounded-md p-1 transition duration-150 hover:text-accent/70 focus:outline-none focus:ring-2 focus:ring-contrast"
 		>
@@ -33,7 +33,7 @@
 		<a
 			href="https://github.com/mitchsaylor"
 			target="_blank"
-			rel="noreferrer"
+			rel="external noreferrer"
 			tabIndex={0}
 			class="rounded-md p-1 transition duration-150 hover:text-accent/70 focus:outline-none focus:ring-2 focus:ring-contrast"
 		>

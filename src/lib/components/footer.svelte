@@ -10,6 +10,7 @@
 	<a
 		href="mailto:mitch@saylor.io"
 		tabIndex={0}
+		rel="external"
 		class="rounded-md px-2 text-4xl font-extrabold tracking-tighter text-accent focus:outline-none focus:ring-2 focus:ring-contrast print:text-2xl"
 	>
 		mitch@{PUBLIC_DOMAIN.split('//')[1].replace('www.', '')}
@@ -21,7 +22,7 @@
 			<a
 				href="https://github.com/mitchsaylor/profile-page"
 				target="_blank"
-				rel="noreferrer"
+				rel="external noreferrer"
 				tabIndex={0}
 				class="rounded-md text-lg font-light underline hover:no-underline focus:outline-none focus:ring-2 focus:ring-contrast"
 			>

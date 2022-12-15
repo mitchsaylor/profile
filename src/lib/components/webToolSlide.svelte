@@ -12,7 +12,7 @@
 	<a
 		href={slide.link}
 		target="_blank"
-		rel="noreferrer"
+		rel="external noreferrer"
 		class="flex aspect-square h-full w-full flex-col items-center justify-center py-8 px-3 transition-all duration-300"
 	>
 		<picture>
