@@ -24,7 +24,7 @@
 
 {#if blok.component === 'logoCloud'}
 	<div class="mx-auto max-w-7xl pt-24 sm:px-6 sm:pb-24 lg:px-8">
-		<h2 class="mb-2 text-center font-medium uppercase tracking-wider text-gray-400">
+		<h2 class="mb-2 text-center text-[.9rem] font-medium uppercase tracking-wider text-gray-500">
 			{blok.heading}
 		</h2>
 		<div
