@@ -1,5 +1,11 @@
 # profile
 
+## 2.0.1
+
+### Patch Changes
+
+- 1502260: Fix: disable form while loading
+
 ## 2.0.0
 
 ### Major Changes
