@@ -80,8 +80,8 @@
 </script>
 
 {#if blok.component === 'contactForm'}
-	<div id="contact">
-		<div class="mx-auto max-w-3xl py-8 sm:px-6 lg:px-8">
+	<div id="contact" class="mt-20 sm:mt-0">
+		<div class="mx-auto max-w-3xl py-8 px-6 sm:px-12">
 			<div class="mb-3 text-center font-forma text-3xl font-bold sm:text-4xl">
 				{blok.heading}
 			</div>
@@ -93,7 +93,7 @@
 				</div>
 			{/if}
 			<form on:submit|preventDefault={handleSubmit} class="noscript">
-				<div class="mb-14 mt-10 grid grid-cols-2 gap-x-8 gap-y-6">
+				<div class="mb-14 mt-10 flex flex-col sm:grid grid-cols-2 gap-x-8 gap-y-6">
 					<div class="flex flex-col gap-1">
 						<label for="fullName" class="text-[.9rem] font-medium">Name</label>
 						<input
