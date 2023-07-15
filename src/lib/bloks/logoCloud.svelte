@@ -36,7 +36,6 @@
 				>
 					{#each blok.logos as logo}
 						<li class="relative z-10 flex items-center justify-center py-8 sm:py-0">
-							<span class="sr-only">{logo.name}</span>
 							{#if options.filter((option) => option.name === logo.image)[0]?.component}
 								<a
 									href={logo.link?.url}
@@ -46,6 +45,7 @@
 									on:click={() => clickLink(`Service logo link`, logo.link?.url)}
 									class="rounded-xl text-gray-600 ring-0 transition duration-100 hover:text-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-300"
 								>
+									<span class="sr-only">{logo.name}</span>
 									<svelte:component
 										this={options.filter((option) => option.name === logo.image)[0]?.component}
 										class="h-16 p-4"
