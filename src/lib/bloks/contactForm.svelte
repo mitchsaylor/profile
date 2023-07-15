@@ -81,7 +81,7 @@
 
 {#if blok.component === 'contactForm'}
 	<div id="contact" class="mt-20 sm:mt-0">
-		<div class="mx-auto max-w-3xl py-8 px-6 sm:px-12">
+		<div class="mx-auto max-w-3xl px-6 py-8 sm:px-12">
 			<div class="mb-3 text-center font-forma text-3xl font-bold sm:text-4xl">
 				{blok.heading}
 			</div>
@@ -93,7 +93,7 @@
 				</div>
 			{/if}
 			<form on:submit|preventDefault={handleSubmit} class="noscript">
-				<div class="mb-14 mt-10 flex flex-col sm:grid grid-cols-2 gap-x-8 gap-y-5 sm:gap-y-6">
+				<div class="mb-14 mt-10 flex grid-cols-2 flex-col gap-x-8 gap-y-5 sm:grid sm:gap-y-6">
 					<div class="flex flex-col gap-1">
 						<label for="fullName" class="text-[.9rem] font-medium">Name</label>
 						<input
@@ -155,7 +155,8 @@
 				<div class="flex justify-center">
 					<button
 						type="submit"
-						class="flex w-full max-w-[16rem] items-center justify-center rounded-full bg-gray-900 py-3.5 text-center font-medium leading-5 text-white ring-0 transition hover:ring-4 hover:ring-gray-350 focus:outline-none focus:ring-4 focus:ring-gray-350"
+						disabled={loading}
+						class="flex w-full max-w-[16rem] items-center justify-center rounded-full bg-gray-900 py-3.5 text-center font-medium leading-5 text-white ring-0 transition hover:ring-4 hover:ring-gray-350 focus:outline-none focus:ring-4 focus:ring-gray-350 disabled:opacity-60"
 					>
 						{#if loading}
 							<LoadingRing class="-my-[2px]" />
