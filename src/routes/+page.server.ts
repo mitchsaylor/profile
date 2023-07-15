@@ -1,4 +1,4 @@
-export const preload = true
+export const prerender = true
 
 // ENV
 import { STORYBLOK_API_TOKEN } from '$env/static/private';
