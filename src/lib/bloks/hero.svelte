@@ -107,7 +107,10 @@
 						<Picture
 							src={blok.foregroundImage.filename}
 							alt={blok.foregroundImage.alt}
-							sizes={[{ minScreenWidth: 1, imageWidth: 1600 }]}
+							sizes={[
+								{ minScreenWidth: 1, imageWidth: 1000 },
+								{ minScreenWidth: 500, imageWidth: 1600 }
+							]}
 							noRing
 							noPadding
 							class="h-full w-full object-cover"
@@ -124,7 +127,10 @@
 				<Picture
 					src={blok.backgroundImage.filename}
 					alt={blok.backgroundImage.alt}
-					sizes={[{ minScreenWidth: 1, imageWidth: 2000 }]}
+					sizes={[
+						{ minScreenWidth: 1, imageWidth: 1200 },
+						{ minScreenWidth: 500, imageWidth: 2000 }
+					]}
 					noRing
 					noPadding
 					class="h-full w-full object-cover"
