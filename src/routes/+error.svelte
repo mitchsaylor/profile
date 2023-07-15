@@ -1,21 +1,12 @@
-<script>
-	import { page } from '$app/stores';
+<script lang="ts">
+	// Logo
+	import Logo from '$lib/logo.svelte';
 </script>
 
-<svelte:head>
-	<title>{$page.status}: {$page.error?.message}</title>
-	<meta name="robots" content="noindex,follow" />
-</svelte:head>
-
-<div class="mb-8 flex grow flex-col items-center justify-center text-center">
-	<h1 class="text-8xl font-black tracking-tighter">{$page.status}</h1>
-	<p class="-mt-3 text-lg font-light text-accent">{$page.error?.message}</p>
-	<div class="my-8">
-		<a
-			href="/"
-			class="transitioon rounded-full border-2 border-accent bg-transparent px-10 py-2 font-filmotype text-3xl text-accent shadow-sm duration-300 ease-out hover:bg-accent hover:text-light"
-		>
-			Go Home
-		</a>
-	</div>
+<div class="mx-auto flex w-full max-w-4xl flex-col items-center px-6 py-24 text-center">
+	<a href="/" tabindex="0" class="w-28 text-accent focus:outline-none focus:ring-4 focus:ring-gray-300 rounded-xl p-2">
+		<Logo />
+	</a>
+    <h1 class="text-5xl tracking-tighter font-black mt-12">404</h1>
+    <p class="italic text-gray-600">Page not found</p>
 </div>

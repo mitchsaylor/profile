@@ -1,59 +1,41 @@
-import { CONTENTFUL_SPACE } from '$env/static/private';
-import { CONTENTFUL_DELIVERY_TOKEN } from '$env/static/private';
+export const prerender = true
 
-import type { PageServerLoad } from './$types';
+// ENV
+import { STORYBLOK_API_TOKEN } from '$env/static/private';
+
+// Types
+import type { PageServerLoad } from './$types.js';
+
+// Svelte
+import { dev } from '$app/environment';
 
 export const load = (async () => {
-	const { data: webTools } = await fetch(
-		`https://graphql.contentful.com/content/v1/spaces/${CONTENTFUL_SPACE}`,
-		{
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-				Authorization: `Bearer ${CONTENTFUL_DELIVERY_TOKEN}`
-			},
-			body: JSON.stringify({
-				query: `query {
-                    webToolCollection(limit: 20, order: title_ASC) {
-                        items {
-                            title
-                            link
-                            logo {
-                                url
-                                title
-                            }
+	const pageData: {
+		data: { PageItem: { name: string; content: { body: any[] } } };
+		errors: any;
+	} = await fetch(`https://gapi-us.storyblok.com/v1/api`, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+			Token: `${STORYBLOK_API_TOKEN}`,
+			Version: dev ? 'draft' : 'published'
+		},
+		body: JSON.stringify({
+			query: `query {
+                    PageItem(language: "default", id: "home") {
+                        name
+                        content {
+                            body
+							seoTitle
+							seoDescription
                         }
                     }
                 }`
-			})
-		}
-	).then((res) => res.json());
-    const { data: services } = await fetch(
-		`https://graphql.contentful.com/content/v1/spaces/${CONTENTFUL_SPACE}`,
-		{
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-				Authorization: `Bearer ${CONTENTFUL_DELIVERY_TOKEN}`
-			},
-			body: JSON.stringify({
-				query: `query {
-                    serviceCollection(limit: 5, order: sort_ASC) {
-                        items {
-                            title
-                            subTitle
-                            content
-                            icon
-                            button
-                        }
-                    }
-                }`
-			})
-		}
-	).then((res) => res.json());
+		})
+	}).then((res) => res.json());
 
-    return {
-        webTools: webTools?.webToolCollection?.items,
-        services: services?.serviceCollection?.items
-    }
+	return {
+		pageData: pageData.data?.PageItem?.content,
+		pageName: pageData.data?.PageItem?.name
+	};
 }) satisfies PageServerLoad;

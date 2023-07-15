@@ -1,15 +1,116 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full scroll-smooth bg-light selection:bg-accent selection:text-light font-sans text-dark">
+<html lang="en" class="h-full scroll-smooth bg-white text-black antialiased">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="https://use.typekit.net/pxn7ndc.css">
+		<meta name="theme-color" content="#C92020" />
 		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Mitch Saylor" />
 		<meta property="og:locale" content="en_US" />
+		<link
+			rel="preload"
+			href="/fonts/forma-djr-deck-bold.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin=""
+			fetchpriority="high"
+		/>
+		<link
+			rel="preload"
+			href="/fonts/forma-djr-deck-extrabold.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin=""
+			fetchpriority="high"
+		/>
+		<link
+			rel="preload"
+			href="/fonts/forma-djr-deck-regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin=""
+			fetchpriority="high"
+		/>
+		<link
+			rel="preload"
+			href="/fonts/forma-djr-deck-italic.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin=""
+			fetchpriority="high"
+		/>
+		<link
+			rel="preload"
+			href="/fonts/forma-djr-deck-light.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin=""
+			fetchpriority="high"
+		/>
+		<link
+			rel="preload"
+			href="/fonts/antiquarian-scribe.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin=""
+			fetchpriority="high"
+		/>
+		<style>
+			@font-face {
+				font-family: Forma;
+				font-weight: 800;
+				src: url(/fonts/forma-djr-deck-extrabold.woff2) format('woff2');
+				font-display: swap;
+			}
+			@font-face {
+				font-family: Forma;
+				font-weight: 700;
+				src: url(/fonts/forma-djr-deck-bold.woff2) format('woff2');
+				font-display: swap;
+			}
+			@font-face {
+				font-family: Forma;
+				font-weight: 500;
+				src: url(/fonts/forma-djr-deck-regular.woff2) format('woff2');
+				font-display: swap;
+			}
+			@font-face {
+				font-family: Forma;
+				font-weight: 400;
+				src: url(/fonts/forma-djr-deck-light.woff2) format('woff2');
+				font-display: swap;
+			}
+			@font-face {
+				font-family: Forma;
+				font-weight: 500;
+				src: url(/fonts/forma-djr-deck-italic.woff2) format('woff2');
+				font-display: swap;
+				font-style: italic;
+			}
+			@font-face {
+				font-family: Scribe;
+				font-weight: 500;
+				src: url(/fonts/antiquarian-scribe.woff2) format('woff2');
+				font-display: swap;
+			}
+		</style>
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover" class="mx-auto flex h-full w-full max-w-9xl flex-col">
-		<div style="display: contents" class="flex grow flex-col">%sveltekit.body%</div>
+	<body data-sveltekit-preload-data="hover" class="flex h-full w-full flex-col">
+		<div style="display: contents" class="flex w-full grow flex-col">%sveltekit.body%</div>
+		<noscript>
+			<style type="text/css">
+				.noscript {
+					display: none !important;
+				}
+				.noscripttext {
+					display: block !important;
+				}
+			</style>
+		</noscript>
 	</body>
 </html>
