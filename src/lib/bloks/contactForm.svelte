@@ -93,7 +93,7 @@
 				</div>
 			{/if}
 			<form on:submit|preventDefault={handleSubmit} class="noscript">
-				<div class="mb-14 mt-10 flex flex-col sm:grid grid-cols-2 gap-x-8 gap-y-6">
+				<div class="mb-14 mt-10 flex flex-col sm:grid grid-cols-2 gap-x-8 gap-y-5 sm:gap-y-6">
 					<div class="flex flex-col gap-1">
 						<label for="fullName" class="text-[.9rem] font-medium">Name</label>
 						<input
