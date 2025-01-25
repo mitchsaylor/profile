@@ -47,7 +47,7 @@
 </Service>
 <Service title="Search Engine Optimization">
 	<p class="text-light-gray mb-3 leading-6">
-		The first rule of the internet has always been: Content is king. Quality and relevence of your
+		The first rule of the internet has always been: Content is king. Quality and relevance of your
 		text and media are the most important aspects of nailing SEO, however SEO goes far deeper than
 		this as well. Some of the most important aspects after content include how that content is
 		delivered: site speed, rendering strategy, media optimizations, language formatting, data
