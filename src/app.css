@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+	--color-gray: oklch(45% 0 0);
+}
+
+/** Safari font weight fix */
+body {
+	font-synthesis: none !important;
+}
