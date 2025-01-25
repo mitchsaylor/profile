@@ -14,6 +14,7 @@
 				<header class="flex grow flex-col justify-center pt-6 pb-8 lg:pb-0">
 					<div class="flex flex-wrap items-center gap-6">
 						<a href="/" class="text-theme-main h-8 w-27">
+							<span class="sr-only">Mitch Saylor</span>
 							<Logo />
 						</a>
 						<h1 class="grow text-2xl font-semibold tracking-tighter whitespace-nowrap">
