@@ -1,5 +1,11 @@
 # profile
 
+## 3.0.0
+
+### Major Changes
+
+- af68d5c: Feat: update framework, layout & content
+
 ## 2.0.1
 
 ### Patch Changes
