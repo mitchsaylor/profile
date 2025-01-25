@@ -1,5 +1,11 @@
 # profile
 
+## 3.0.1
+
+### Patch Changes
+
+- 96d0071: Fix: explicitly set css source
+
 ## 3.0.0
 
 ### Major Changes
