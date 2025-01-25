@@ -1,5 +1,11 @@
 # profile
 
+## 3.0.2
+
+### Patch Changes
+
+- a6e08ea: Fix: Safari style fixes
+
 ## 3.0.1
 
 ### Patch Changes
