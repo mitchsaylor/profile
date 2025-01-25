@@ -1,3 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+	--color-light-gray: oklch(80% 0 0);
+	--color-dark-gray: oklch(70% 0 0);
+	--color-theme-main: oklch(54% 0.2 28);
+	--color-theme-light: oklch(68% 0.2 28);
+
+	--font-body: 'AlbertSans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/** Safari font weight fix */
+body {
+	font-synthesis: none !important;
+}
