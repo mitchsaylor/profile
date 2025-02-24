@@ -1,8 +1,8 @@
 <script lang="ts">
 	// Components
 	import Logo from '$lib/logo.svelte';
-	import BombergersLabsLogo from '$lib/bombergersLabsLogo.svelte';
 	import GithubLogo from '$lib/githubLogo.svelte';
+	import TreemagnetsLogo from '$lib/treemagnetsLogo.svelte';
 </script>
 
 <div class="relative lg:static">
@@ -29,16 +29,23 @@
 						Currently Building High-Performance Infrastructure For
 						<span class="text-theme-light">Modern Commerce & Services</span>
 					</p>
-					<p class="text-light-gray mb-14">
+					<p class="text-light-gray mb-10">
 						There's never been a better time to be building digital content and architecture, and I
-						love seeing the impact that this has on businesses that are passionate about connecting
+						love to see the impact that this has on businesses that are passionate about connecting
 						with their audiences in new and more effective ways.
 					</p>
-					<p class="text-light-gray mb-3.5 font-light">Check out my latest work at:</p>
+					<p class="mb-5 font-medium">Check out my latest work at:</p>
 					<div class="flex">
-						<a href="https://bombergers.dev" target="_blank" class="w-12">
-							<span class="sr-only">Bomberger's Labs</span>
-							<BombergersLabsLogo />
+						<a
+							href={null}
+							target="_blank"
+							class="flex flex-col rounded-2xl border border-white/5 bg-white/2 px-4 py-9"
+						>
+							<div class="w-40">
+								<span class="sr-only">Treemagnets Pro Disc Golf Shop</span>
+								<TreemagnetsLogo />
+							</div>
+							<p class="text-light-gray mt-2 text-center text-sm">Coming Spring 2025</p>
 						</a>
 					</div>
 				</header>
