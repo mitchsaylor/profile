@@ -1,5 +1,11 @@
 # profile
 
+## 3.0.3
+
+### Patch Changes
+
+- 8f91c6b: Fix: Update work links
+
 ## 3.0.2
 
 ### Patch Changes
