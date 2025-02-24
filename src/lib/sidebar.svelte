@@ -2,7 +2,7 @@
 	// Components
 	import Logo from '$lib/logo.svelte';
 	import GithubLogo from '$lib/githubLogo.svelte';
-	import TreemagnetsLogo from './treemagnetsLogo.svelte';
+	import TreemagnetsLogo from '$lib/treemagnetsLogo.svelte';
 </script>
 
 <div class="relative lg:static">
