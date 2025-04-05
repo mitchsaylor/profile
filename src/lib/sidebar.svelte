@@ -2,7 +2,6 @@
 	// Components
 	import Logo from '$lib/logo.svelte';
 	import GithubLogo from '$lib/githubLogo.svelte';
-	import TreemagnetsLogo from '$lib/treemagnetsLogo.svelte';
 </script>
 
 <div class="relative lg:static">
@@ -34,20 +33,6 @@
 						love to see the impact that this has on businesses that are passionate about connecting
 						with their audiences in new and more effective ways.
 					</p>
-					<p class="mb-5 font-medium">Check out my latest work at:</p>
-					<div class="flex">
-						<a
-							href={null}
-							target="_blank"
-							class="flex flex-col rounded-2xl border border-white/5 bg-white/2 px-4 py-9"
-						>
-							<div class="w-40">
-								<span class="sr-only">Treemagnets Pro Disc Golf Shop</span>
-								<TreemagnetsLogo />
-							</div>
-							<p class="text-light-gray mt-2 text-center text-sm">Coming Spring 2025</p>
-						</a>
-					</div>
 				</header>
 				<footer class="text-dark-gray hidden text-sm lg:block">
 					&copy; {new Date().getFullYear() > 2022 ? `2022-${new Date().getFullYear()}` : '2022'} Mitch
